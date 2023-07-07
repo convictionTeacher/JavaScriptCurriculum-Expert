@@ -147,14 +147,6 @@ export const Chapter2_4: FC = () => (
           ちなみにPromiseで紹介したthenやcatchもasync内で使用できます。
         </TextWrapper>
       </TextWrapper>
-      <SubTitle>チャレンジ課題</SubTitle>
-      1.fetchDataという関数があります。この関数は非同期なAPIリクエストを行い、成功時にはレスポンスデータを解決するPromiseを返します。
-      <br />
-      2.fetchData関数を呼び出してデータを取得し、成功した場合は「データの取得に成功しました:
-      [データ]」というメッセージをコンソールに出力します。
-      <br />
-      3. 失敗した場合は「データの取得に失敗しました:
-      [エラーメッセージ]」というメッセージをコンソールに出力します。
     </ContentWrapper>
   </Root>
 )

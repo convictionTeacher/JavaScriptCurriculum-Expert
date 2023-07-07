@@ -124,6 +124,12 @@ export const Chapter1_7: FC = () => (
           再帰関数を使って、引数xに対して、xが偶数の場合はxを2で割り、奇数の場合はxに3をかけて1を足します。
           <br />
           この操作を繰り返して初期のxに戻るまでの回数を再帰関数をconsole.logで表示させてください
+          <br />
+          <br />
+          1.
+          以下に配列numbersがあります。この配列の各要素に対して、与えられた関数transformを適用し、新しい配列を作成してください。
+          <br />
+          新しい配列を返す関数applyTransformを作成してください。
         </Text>
       </TextWrapper>
     </ContentWrapper>

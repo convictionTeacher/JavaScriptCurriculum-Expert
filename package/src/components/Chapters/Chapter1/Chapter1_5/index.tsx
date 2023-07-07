@@ -175,8 +175,22 @@ export const Chapter1_5: FC = () => (
         </TextWrapper>
       </TextWrapper>
       <SubTitle>チャレンジ課題</SubTitle>
-      <Text>作成済みのJSdocを参考に関数を作成してください</Text>
-      <Text>作成済みの関数に対してJSDocで関数の説明を作成してください</Text>
+      <Text>
+        関数を作成し、引数が渡されなかった場合はあらかじめ用意したデフォルト引数を渡すようにしてください。
+        <br />
+        関数はnameを引数として受け取り、(`Hello, ${"{"}name{"}"}
+        !`);の形式でログに出力させてください。
+        <br />
+        <br />
+        作成ずみのオブジェクトを分割代入を使って値を取得してください。
+        <br />
+        1. 変数nameにuserオブジェクトのnameプロパティを代入してください。
+        <br />
+        2. 変数ageにuserオブジェクトのageプロパティを代入してください。
+        <br />
+        3.
+        変数cityにuserオブジェクトのaddressプロパティのcityプロパティを代入してください。
+      </Text>
     </ContentWrapper>
   </Root>
 )
