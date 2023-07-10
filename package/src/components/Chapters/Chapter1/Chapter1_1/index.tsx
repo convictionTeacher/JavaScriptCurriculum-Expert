@@ -67,7 +67,9 @@ export const Chapter1_1: FC = () => (
         </TextWrapper>
       </div>
       <SubTitle>チャレンジ課題</SubTitle>
-      <Text>受け取った引数が偶数か奇数かを判定する関数を作成してください</Text>
+      <Text>
+        受け取った引数が偶数か奇数かを判定してlogに出力する関数を作成してください
+      </Text>
     </ContentWrapper>
   </Root>
 )
