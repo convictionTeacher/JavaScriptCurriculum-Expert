@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
+    <script>
+      // 以下のコード見て最後の質問に解答してください
+      const obj1 = {
+        name: "John",
+        greet: function () {
+          console.log(`Hello, ${this.name}!`)
+        },
+      }
+
+      const obj2 = {
+        name: "Jane",
+        greet: obj1.greet,
+      }
+
+      const obj3 = {
+        name: "Alice",
+        greet: () => {
+          console.log(`Hello, ${this.name}!`)
+        },
+      }
+
+      // 問題1: この行の出力結果は何ですか？
+      obj1.greet()
+      // Answer:
+      // 問題2: この行の出力結果は何ですか？
+      obj2.greet()
+      // Answer:
+      // 問題3: この行の出力結果は何ですか？
+      obj3.greet()
+      // Answer:
+    </script>
+    <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
+  </body>
+</html>

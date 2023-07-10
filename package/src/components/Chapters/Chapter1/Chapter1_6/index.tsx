@@ -87,7 +87,7 @@ export const Chapter1_6: FC = () => (
         </CodeBlock>
       </TextWrapper>
       <SubTitle>チャレンジ課題</SubTitle>
-      <Text>二つのオブジェクトを一つにまとめてください</Text>
+      <Text>作成ずみの二つのオブジェクトを一つにまとめてください</Text>
       <Text>
         そのまとめたオブジェクトの3番目と4番目の値をそれぞれ取り出して、ログとして表示してください
       </Text>
