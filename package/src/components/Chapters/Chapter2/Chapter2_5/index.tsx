@@ -80,28 +80,35 @@ export const Chapter2_5: FC = () => (
         </TextWrapper>
         <CodeBlock>
           <pre>
-            button.<CodeRed>addEventListener</CodeRed>("click", <CodeBlue>async</CodeBlue> <CodeBlue>function</CodeBlue> () ｛
+            button.<CodeRed>addEventListener</CodeRed>("click",{" "}
+            <CodeBlue>async</CodeBlue> <CodeBlue>function</CodeBlue> () ｛
             <br />
             &nbsp;<CodeBlue>try</CodeBlue> ｛
             <br />
-            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> response = <CodeBlue>await</CodeBlue> fetch(" https://randomuser.me/api/")
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> response ={" "}
+            <CodeBlue>await</CodeBlue> fetch(" https://randomuser.me/api/")
             <br />
-            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> data = <CodeBlue>await</CodeBlue> response.<CodeRed>json</CodeRed>()
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> data ={" "}
+            <CodeBlue>await</CodeBlue> response.<CodeRed>json</CodeRed>()
             <br />
-            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> firstData = data.results[0]
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> firstData = data.results[0]
             <br />
-            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> firstName = firstData.name.first
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> firstName =
+            firstData.name.first
             <br />
-            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> lastName = firstData.name.last
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> lastName =
+            firstData.name.last
             <br />
-            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> fullName = `$｛firstName｝ $｛lastName｝`
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> fullName = `$｛firstName｝
+            $｛lastName｝`
             <br />
             <br />
-            &nbsp; &nbsp;<CodeBlue>Const</CodeBlue> name = document.<CodeRed>getElementById</CodeRed>("name")
+            &nbsp; &nbsp;<CodeBlue>const</CodeBlue> name = document.
+            <CodeRed>getElementById</CodeRed>("name")
             <br />
             &nbsp; &nbsp; name.textContent = `$｛fullName｝`
             <br />
-            &nbsp;｝<CodeRed>catch</CodeRed>  (error) ｛
+            &nbsp;｝<CodeRed>catch</CodeRed> (error) ｛
             <br />
             &nbsp; &nbsp;console.<CodeRed>error</CodeRed>(error)
             <br />
@@ -124,6 +131,10 @@ export const Chapter2_5: FC = () => (
         </Text>
       </TextWrapper>
       <SubTitle>チャレンジ課題</SubTitle>
+      RANDOM USER GENERATOR
+      APIを使用して、レスポンスから性別とメールアドレスを取得してログに出力させてください。
+      <br />
+      エラーの場合はログにエラーを表示させるプログラムを作成してください。
     </ContentWrapper>
   </Root>
 )

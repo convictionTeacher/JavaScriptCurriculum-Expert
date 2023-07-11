@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>基本の型：コールバック関数</title>
+  </head>
+  <body>
+    <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
+    <script>
+      // 仮のAPIのレスポンスを受け取るfetchData関数の続きを作成してください。
+      // fetchData関数ではsetTimeoutを使用して仮のAPIリクエストを作成しています。
+      // レスポンスの内容（400エラーか200レスポンス）によって処理を分岐する非同期処理をコールバック関数を使用して作成してください
+
+      function fetchData(callback) {
+        // 仮のAPIリクエストを行う
+        setTimeout(() => {
+          const response = {
+            status: 200, // 200: 成功, 400: エラー
+            data: {
+              message: "データの取得に成功しました。",
+            },
+          }
+          // コールバック関数を呼び出し、レスポンスを渡す
+          callback(response)
+        }, 1000)
+      }
+
+      // コールバック関数の定義
+      function handleResponse(response) {
+        // ここから
+      }
+
+      // 非同期処理の呼び出し
+      fetchData(handleResponse)
+    </script>
+    <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
+  </body>
+</html>

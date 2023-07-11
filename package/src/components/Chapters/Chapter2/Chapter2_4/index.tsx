@@ -147,6 +147,14 @@ export const Chapter2_4: FC = () => (
           ちなみにPromiseで紹介したthenやcatchもasync内で使用できます。
         </TextWrapper>
       </TextWrapper>
+      <TextWrapper>
+        <SubTitle>チャレンジ課題</SubTitle>
+        asyncで作成された関数fetchDataを使用して、レスポンスを受け取ってログに出力するgetData関数を作成してください。
+        <br />
+        getData関数はasyncで作成し、fetchDataを内部でawaitを使って呼ぶようにしてください。
+        <br />
+        成功時とエラー時それぞれ受けとった内容をログに出力させてください。
+      </TextWrapper>
     </ContentWrapper>
   </Root>
 )
