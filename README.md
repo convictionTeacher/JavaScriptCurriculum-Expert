@@ -81,3 +81,6 @@ git commit -m"メッセージ"
 
 GitHub 上でプルリクエストを作成  
 レビュアーに@convictionTeacher を指定してください  
+PRを作成したらbacklogにて課題提出の連絡をしてください  
+メンターが確認してFBを行います  
+FB自体はGitHubでコードにコメントします  
