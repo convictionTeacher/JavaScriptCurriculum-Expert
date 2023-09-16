@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>関数定義の注意点</title>
+  </head>
+  <body>
+    <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
+    <script>
+      // 以下のJSdocを参考に関数を作成してください
+      /**
+       * 与えられた数値の2倍を計算する関数
+       * @param {number} num - 入力される数値
+       * @returns {number} 入力された数値の2倍
+       */
+      function doubleNumber(num) {
+        return num * 2
+      }
+      // 以下の関数に対してJSDocで関数の説明を作成してください
+      /**
+       * 配列から偶数の要素のみを取り出す関数
+       * @param {number[]} array - 入力される配列
+       * @returns {number[]} 偶数の要素だけからなる新しい配列
+       */
+
+      function getEvenNumbers(array) {
+        const evenNumbers = array.filter((num) => num % 2 === 0)
+        return evenNumbers
+      }
+    </script>
+    <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
+  </body>
+</html>
