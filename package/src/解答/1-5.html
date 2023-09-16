@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>変数と引数</title>
+  </head>
+  <body>
+    <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
+    <script>
+      // 関数を作成し、引数が渡されなかった場合はあらかじめ用意したデフォルト引数を渡すようにしてください。
+      // 関数はnameを引数として受け取り、(`Hello, ${name}!`);の形式でログに出力させてください。
+
+      // 作成ずみのオブジェクトを分割代入を使って値を取得してください。
+      const user = {
+        name: "John",
+        age: 30,
+        email: "john@example.com",
+        address: {
+          city: "Tokyo",
+          country: "Japan",
+        },
+      }
+
+      // ここから
+      // 問題1:変数 name に user オブジェクトの name プロパティを代入してください。
+      const { name } = user
+      console.log(name) // 結果: John
+      // 問題2:変数 age に user オブジェクトの age プロパティを代入してください。
+      const { age } = user
+      console.log(age) // 結果: 30
+      // 問題3:変数 city に user オブジェクトの address プロパティの city プロパティを代入してください。
+      const {
+        address: { city },
+      } = user
+      console.log(city) // 結果: Tokyo
+    </script>
+    <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>スプレッド構文</title>
+  </head>
+  <body>
+    <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
+    <script>
+      // 作成ずみの二つのオブジェクトを一つにまとめてください
+      // そのまとめたオブジェクトの3番目と4番目の値をそれぞれ取り出して、ログとして表示してください
+
+      const obj1 = {
+        value1: "A",
+        value2: "B",
+      }
+
+      const obj2 = {
+        value3: "C",
+        value4: "D",
+      }
+
+      //ここから
+      const mergedObj = { ...obj1, ...obj2 }
+      const { value3, value4 } = mergedObj
+
+      console.log(value3) // 結果: C
+      console.log(value4) // 結果: D
+    </script>
+    <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
+  </body>
+</html>
