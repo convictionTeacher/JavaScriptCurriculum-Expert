@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Promiseオブジェクト</title>
+  </head>
+  <body>
+    <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
+    <script>
+      // RANDOM USER GENERATOR APIを使用して、レスポンスから性別とメールアドレスを取得してログに出力させてください。
+      // エラーの場合はログにエラーを表示させるプログラムを作成してください
+      const getUserData = async () => {
+        try {
+          const response = await fetch(" https://randomuser.me/api/")
+
+          const data = await response.json()
+          const firstData = data.results[0]
+          const gender = firstData.gender
+          const email = firstData.email
+
+          console.log(gender)
+          console.log(email)
+        } catch (error) {
+          console.error(error)
+        }
+      }
+
+      getUserData()
+    </script>
+    <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
+  </body>
+</html>
