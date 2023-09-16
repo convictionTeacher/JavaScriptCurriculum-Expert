@@ -23,6 +23,11 @@
       }
 
       //ここから
+      const mergedObj = { ...obj1, ...obj2 }
+      const { value3, value4 } = mergedObj
+
+      console.log(value3) // 結果: C
+      console.log(value4) // 結果: D
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>
