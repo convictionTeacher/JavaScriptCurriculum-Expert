@@ -23,11 +23,19 @@
       }
 
       // ここから
-      // 問題1:変数 name に user オブジェクトの name プロパティを代入してください。
+      // 問題1
+      const { name } = user
+      console.log(name) // 結果: John
 
-      // 問題2:変数 age に user オブジェクトの age プロパティを代入してください。
+      // 問題2
+      const { age } = user
+      console.log(age) // 結果: 30
 
-      // 問題3:変数 city に user オブジェクトの address プロパティの city プロパティを代入してください。
+      // 問題3
+      const {
+        address: { city },
+      } = user
+      console.log(city) // 結果: Tokyo
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>

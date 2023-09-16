@@ -21,6 +21,16 @@
       }
 
       // ここから
+      function applyTransform(array, transform) {
+        const result = []
+        for (let i = 0; i < array.length; i++) {
+          result.push(transform(array[i]))
+        }
+        return result
+      }
+
+      const doubledNumbers = applyTransform(numbers, double)
+      console.log(doubledNumbers) // 出力: [2, 4, 6, 8, 10]
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>
