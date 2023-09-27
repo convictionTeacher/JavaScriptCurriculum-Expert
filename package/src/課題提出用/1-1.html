@@ -10,6 +10,15 @@
     <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
     <script>
       // 受け取った引数が偶数か奇数かを判定してlogに出力する関数を作成してください
+      function checkEvenOrOdd(number) {
+        if ( number % 2 === 0 ) {
+          return "偶数です";
+        } else {
+          return "奇数です";
+        }
+      }
+      console.log(checkEvenOrOdd(1));
+      console.log(checkEvenOrOdd(2));
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>
