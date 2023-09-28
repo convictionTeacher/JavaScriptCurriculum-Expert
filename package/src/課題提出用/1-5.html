@@ -24,11 +24,31 @@
       }
 
       // ここから
+      function obj({ name = "Guest" }) {
+        console.log(`Hello, ${name}!`);
+      }
+      obj(user);
+
       // 問題1:変数 name に user オブジェクトの name プロパティを代入してください。
+      function getName({ name = "Shibata" }) {
+        return name;
+      }
+      const name = getName(user);
+      console.log(name);
 
       // 問題2:変数 age に user オブジェクトの age プロパティを代入してください。
+      function getAge({ age = 28 }) {
+        return age;
+      }
+      const age = getAge(user);
+      console.log(age);
 
       // 問題3:変数 city に user オブジェクトの address プロパティの city プロパティを代入してください。
+      function getCity({ address: { city = "Yamagata" } }) {
+        return city;
+      }
+      const city = getCity(user);
+      console.log(city);
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>
