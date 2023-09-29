@@ -107,7 +107,7 @@ export const Chapter1_4: FC = () => (
         </Text>
       </TextWrapper>
       <SubTitle>チャレンジ課題</SubTitle>
-      <Text>以下のコード見て最後の質問に解答してください</Text>
+      <Text>提出用ファイル内のコード見て最後の質問に解答してください</Text>
     </ContentWrapper>
   </Root>
 )
