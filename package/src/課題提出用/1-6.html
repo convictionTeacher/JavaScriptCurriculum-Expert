@@ -22,7 +22,9 @@
         value4: "D",
       }
 
-      //ここから
+      const obj3 = {...obj1, ...obj2}; 
+      const {value1: w, value2: x, value3: y, value4: z} = obj3;
+      console.log(y, z);
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>
