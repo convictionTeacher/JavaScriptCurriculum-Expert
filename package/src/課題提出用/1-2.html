@@ -10,10 +10,28 @@
     <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
     <script>
       // functionを使って、引数として与えられた文字列を逆順にしてlogに出力する関数を作成してください。
+      function reverse(str) {
+        return str.split('').reduce((x, y) => y + x);
+      }
+      const str = 'hashimoto';
+      const rev = reverse(str);
+      console.log(rev);
 
       // アロー関数を使って、引数として与えられた二つの数値を掛け合わせてlogに出力する関数を作成してください。
 
+      let Total = (x, y) => {
+        return x + y;
+      };
+
+      let result = Total(3, 4);
+      console.log(result);
       // アロー関数を使って、引数として与えられた数値の配列の中で最大値をlogに出力する関数を作成してください。
+        const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+        const max = numbers.reduce((accumulator, currentValue) => {
+        return currentValue > accumulator ? currentValue : accumulator;
+  }, numbers[0]);
+
+      console.log(max);
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>
