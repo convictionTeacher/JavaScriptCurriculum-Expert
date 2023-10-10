@@ -28,6 +28,12 @@
       // 関数の呼び出し
       async function getData() {
         //ここから
+        try {
+          const result = await fetchData();
+          console.log("Success:", result);
+        } catch (error) {
+          console.error("Error:", error);
+        }
       }
 
       //　関数の呼び出し

@@ -30,6 +30,11 @@
       // コールバック関数の定義
       function handleResponse(response) {
         // ここから
+        if (response.status === 200) {
+          console.log(response.data.message)
+        } else {
+          console.log('error');
+        }
       }
 
       // 非同期処理の呼び出し

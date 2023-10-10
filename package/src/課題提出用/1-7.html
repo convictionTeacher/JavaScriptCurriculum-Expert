@@ -12,8 +12,28 @@
       // 再帰関数を使って、引数xに対して、xが偶数の場合はxを2で割り、奇数の場合はxに3をかけて1を足します。
       // この操作を繰り返して初期のxに戻るまでの回数を再帰関数をconsole.logで表示させてください
 
+      function countOperationsToReachX(x, originalX, count = 0) {
+        if (x >= originalX && count > 0) {
+          console.log(`初期のxに戻るまでの回数: ${count}`);
+          return;
+        }
+        if (x % 2 === 0) {
+          x = x / 2;
+        } else {
+          x = x * 3 + 1;
+        }
+        count++;
+        if (count > 10) {
+          console.log("無理です。");
+          return;
+        }
+        countOperationsToReachX(x, originalX, count);
+      }
+      const initialX = 4;
+      countOperationsToReachX(initialX, initialX);
+
       //以下に配列numbersがあります。この配列の各要素に対して、与えられた関数transformを適用し、新しい配列を作成してください。
-      // 新しい配列を返す関数 applyTransformを作成してください。
+      //新しい配列を返す関数 applyTransformを作成してください。
 
       const numbers = [1, 2, 3, 4, 5]
 
@@ -22,6 +42,16 @@
       }
 
       // ここから
+
+      function applyTransform(arr, transform) {
+        const transformedArray = [];
+        for (let i = 0; i < arr.length; i++) {
+          transformedArray.push(transform(arr[i]));
+        }
+        return transformedArray;
+      }
+      console.log(applyTransform(numbers, double));
+
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>

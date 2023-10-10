@@ -10,10 +10,21 @@
     <!-- ↓ scriptを記述する場合はこのエリアに記述してください ↓ -->
     <script>
       // functionを使って、引数として与えられた文字列を逆順にしてlogに出力する関数を作成してください。
+      function reverseString(inputString) {
+        return inputString.split("").reverse().join("");
+      }
+      console.log(reverseString("あいうえお"));
 
       // アロー関数を使って、引数として与えられた二つの数値を掛け合わせてlogに出力する関数を作成してください。
+      const multiply = (a,b) => a * b;
+      console.log(multiply(2,3));
 
       // アロー関数を使って、引数として与えられた数値の配列の中で最大値をlogに出力する関数を作成してください。
+      const ary = [1,2,3,4,5]
+      const aryMax = inputArray =>{
+        return Math.max.apply(null, inputArray)
+      } 
+      console.log(aryMax(ary));
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>

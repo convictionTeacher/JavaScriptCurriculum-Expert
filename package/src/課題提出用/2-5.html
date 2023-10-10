@@ -11,7 +11,29 @@
     <script>
       // RANDOM USER GENERATOR APIを使用して、レスポンスから性別とメールアドレスを取得してログに出力させてください。
       // エラーの場合はログにエラーを表示させるプログラムを作成してください
+      async function fetchData() {
+      try {
+        const response = await fetch('https://randomuser.me/api/');
+
+        if (!response.ok) {
+          throw new Error('ネットワークエラー');
+        }
+
+        const data = await response.json();
+        const firstData = data.results[0];
+        const gender = firstData.gender;
+        const email = firstData.email;
+
+        console.log('性別:', gender);
+        console.log('メールアドレス:', email);
+
+      } catch (error) {
+        console.error(error);
+      }
+    }
+
+    fetchData();
     </script>
     <!-- ↑ scriptを記述する場合はこのエリアに記述してください ↑ -->
   </body>
-</html>
+</html>  
