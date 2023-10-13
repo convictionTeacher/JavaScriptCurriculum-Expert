@@ -31,9 +31,9 @@ export const Chapter1_6: FC = () => (
           <pre>
             <CodeBlue>const</CodeBlue> arr1 = [1, 2, 3];
             <br />
-            <CodeBlue>const</CodeBlue> arr1 = [4, 5, 6];
+            <CodeBlue>const</CodeBlue> arr2 = [4, 5, 6];
             <br />
-            <CodeBlue>const</CodeBlue> arr1 = [<CodeRed>...arr1</CodeRed>,{" "}
+            <CodeBlue>const</CodeBlue> arr3 = [<CodeRed>...arr1</CodeRed>,{" "}
             <CodeRed>...arr2</CodeRed>]; //[1,2,3,4,5,6]
             <br />
           </pre>
@@ -50,10 +50,10 @@ export const Chapter1_6: FC = () => (
           <pre>
             <CodeBlue>const</CodeBlue> obj1 = ｛1, 2, 3｝;
             <br />
-            <CodeBlue>const</CodeBlue> obj1 = ｛3, 4, 5｝;
+            <CodeBlue>const</CodeBlue> obj2 = ｛4, 5, 6｝;
             <br />
-            <CodeBlue>const</CodeBlue> obj1 = [<CodeRed>...obj1</CodeRed>,{" "}
-            <CodeRed>...obj2</CodeRed>]; //[1,2,3,4,5,6]
+            <CodeBlue>const</CodeBlue> obj3 = ｛<CodeRed>...obj1</CodeRed>,{" "}
+            <CodeRed>...obj2</CodeRed>｝; //｛1,2,3,4,5,6｝
             <br />
           </pre>
         </CodeBlock>
@@ -64,7 +64,7 @@ export const Chapter1_6: FC = () => (
           <pre>
             <CodeBlue>const</CodeBlue> obj1 = ｛a:1, b:2｝;
             <br />
-            <CodeBlue>const</CodeBlue> obj1 = ｛<CodeRed>...obj1</CodeRed>,
+            <CodeBlue>const</CodeBlue> obj2 = ｛<CodeRed>...obj1</CodeRed>,
             d:4｝;
             <br />
             console.log(obj2); // ｛ a: 1, b: 4, c: 3 ｝
